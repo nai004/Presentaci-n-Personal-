@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App2.MainPage">
+
+    <StackLayout BackgroundColor="#EFC3CA">
+
+        <Frame Margin="10"
+           BorderColor="#98F5F9"
+           CornerRadius="150"
+           HeightRequest="250"
+           WidthRequest="250"
+           IsClippedToBounds="True"
+           HorizontalOptions="Center"
+           VerticalOptions="Center">
+            <Image Source="ProfilePic.png"
+
+                   BackgroundColor="#DB7888"
+             Aspect="AspectFill"
+             Margin="-8"
+             HeightRequest="100"
+             WidthRequest="100" />
+        </Frame>
+
+        <Label Text="Nailea V. Pinales Ovando " 
+               TextColor="#98F5F9"
+               Margin="8"
+               FontAttributes="Bold"
+               FontSize="25"
+               Padding="1"
+            HorizontalOptions="Center"
+           VerticalOptions="CenterAndExpand" />
+
+      
+
+        <Label Text="Cursando Ingenieria de Sistemas en la universidad Dominicana OYM"
+               TextColor="#98F5F9"
+               FontSize="22"
+               FontAttributes="Bold"
+               Margin="8"
+               Padding="10,10,10,10"
+               HorizontalTextAlignment="Center"
+               VerticalOptions="CenterAndExpand"         
+            />
+
+
+        <Label Text="MIS REDES SOCIALES"
+              TextColor="#a4b0be"
+               FontSize="25"
+               Padding="0"
+                FontFamily = "Lobster"
+            HorizontalOptions="Center"
+           VerticalOptions="CenterAndExpand"   />
+
+        <StackLayout Orientation="Vertical" HeightRequest="80" BackgroundColor="#F5A8B5" Padding="10">
+
+            <StackLayout Spacing="0" Orientation="Horizontal" HorizontalOptions="Center">
+                <Button BackgroundColor="#F5A8B5" ImageSource="Pinterest.png"  HeightRequest="{OnPlatform Android=90}" WidthRequest="{OnPlatform Android=80}" x:Name="btnVerPinterest" Clicked="btnVerPinterest_Clicked"/>
+                <Button BackgroundColor="#F5A8B5" ImageSource="Linnkedin.png"  HeightRequest="{OnPlatform Android=90}" WidthRequest="{OnPlatform Android=80}" x:Name="btnVerLinkedin" Clicked="btnVerLinkedin_Clicked"/>
+                <Button BackgroundColor="#F5A8B5" ImageSource="Instagram.png" HeightRequest="{OnPlatform Android=90}" WidthRequest="{OnPlatform Android=80}" x:Name="btnVerInstagram"    Clicked="btnVerInstagram_Clicked_1" />
+            </StackLayout>
+
+        </StackLayout>
+
+    </StackLayout>
+
+    </ContentPage>
